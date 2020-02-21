@@ -37,7 +37,8 @@ module.exports = [
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'page.js',
-      libraryTarget: 'commonjs' 
+      libraryTarget: 'commonjs',
+      library: 'page'
     },
     externals: ['react', 'react-dom', 'react-dom/server'],
     mode: 'development',
